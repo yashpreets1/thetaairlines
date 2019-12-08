@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Theta Airlines - Jobs</title>
+    <link href="css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="css/services.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+
+        // Menu-toggle button
+
+        $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        // Scrolling Effect
+
+        $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('white');
+            }
+
+            else {
+                $('nav').removeClass('white');
+            }
+        })
+
+        // Shadow Nav Bar
+
+        $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('active');
+            }
+
+            else {
+                $('nav').removeClass('active');
+            }
+        })
+
+        //Smooth scrolling
+
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
+
+    </script>
+</head>
+<body>
+
+<nav class="nav">
+    <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
+    </div>
+
+
+
+    <div class="logo" >
+        <a href="index.html">
+            <img src="img/thetalogosmall.png" alt="Theta Airlines Logo" class="logo">
+        </a>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class=><a href="whoweare.html">About</a></li>
+            <li class=><a href="jobs.html">Jobs</a></li>
+            <li class=><a href="promotions.html">Promotions</a></li>
+            <li><a href="book.html">Book a Flight</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<header id="showcase">
+
+
+
+    <h1>Jobs</h1>
+
+</header>
+
+<div class="containera">
+
+
+    <section id="section-a">
+        <h1>Are you looking to work with us?</h1>
+        <p>
+
+            Amazing! Theta Airlines is one of the best airline agencies in the region due to the quality of the professionals who work with us. We specialize in a various professional sectors that go from customer service to the pilots of our most renowned companies. If you think you like apply and come work with us!. </p>
+    </section>
+
+    <section id="section-b">
+        <h1>How to apply?</h1>
+        <img src="img/application.png" class="image">
+    </section>
+
+
+    <div class="xop-section" id="services">
+        <section class="cta" id="hire1">
+            <div class="container">
+                <a href="book.html" class="button button-dark">Book a Flight</a>
+            </div>
+        </section>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="col-3">
+            <p> Theta Airlines © All Rights Reserved </p>
+        </div>
+
+
+        <div class="col-1">
+            <ul class="unstyled-list">
+                <li><strong>Pages</strong></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="whoweare.html">About</a></li>
+                <li><a href="jobs.html" >Jobs</a></li>
+                <li><a href="promotions.html">Promotions</a></li>
+                <li><a href="book.html">Book a Flight</a></li>
+            </ul>
+        </div>
+
+
+        <div class="col-1">
+            <ul class="unstyled-list">
+                <li><strong>Social Medias</strong></li>
+                <li><a href="" target="_blank">Facebook</a></li>
+                <li><a href="" target="_blank">Twitter</a></li>
+                <li><a href="" target="_blank">Instagram</a></li>
+                <li><a href="" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+<script src="js/parallax.js"></script>
